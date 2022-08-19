@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Synopsis</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./synopsis.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"
+        integrity="sha512-rstIgDs0xPgmG6RX1Aba4KV5cWJbAMcvRCVmglpam9SoHZiUCyQVDdH2LPlxoHtrv17XWblE/V/PP+Tr04hbtA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">
+            <i class="uil uil-ticket"></i>FullTank Theater
+        </a>
+        <div class="uil uil-bars" id="menu-icon"></div>
+
+        <ul class="navbar">
+            <li><a href="index.html"></a>Home</li>
+            <li><a href="about.html"></a>About</li>
+            <li><a href="#movies"></a>Movies/TV</li>
+            <li><a href="#services"></a>Services</li>
+            <li><a href="#contact us"></a>Contact Us</li>
+        </ul>
+        <li id="btnsignup" onclick="signupToggle()">
+            <a href="#" class="btn">SignUp</a>
+        </li>
+        <li id="btnlogin" onclick="loginToggle()">
+            <a href="#" class="btn">Login</a>
+        </li>
+        <li id="btnDisplayUser">
+            <a href="#" id="displayUser"></a>
+        </li>
+        <li id="btnlogout">
+            <a href="#" class="btn">logout</a>
+        </li>
+
+
+    </header>
+
+    <div class="sypnosis-bg">
+        <img src="./images/Furysyp.jpg" class="fury-img">
+    </div>
+
+
+    <div class="movie_card" id="bright">
+        <div class="info_section">
+          <div class="movie_header">
+            <img class="locandina" src="./images/Furysyp2.jpg"/>
+            <h1>Fury</h1>
+            <h4>2014, David Ayer</h4>
+            <span class="minutes">117 min</span>
+            <p class="type">Action, War</p>
+          </div>
+          <div class="movie_desc">
+            <p class="text">
+                "In the last months of World War II, as the Allies make their final push in the European theatre, a battle-hardened U.S. Army sergeant named 'Wardaddy' commands a Sherman tank called 'Fury' and its five-man crew on a deadly mission behind enemy lines.
+            </p>
+          </div>
+          <div class="movie_social">
+            <ul>
+                <a href="movieplayer2.html">
+                    <li><i class="material-icons">WATCH NOW!</i></li>
+                </a>
+            </ul>
+          </div>
+        </div>
+        <div class="blur_back bright_back"></div>
+      </div>
+
+
+
+      <section class="movies" id="movies">
+        <h2 class="heading">Movies You may Like!</h2>
+        <!--Movies Container-->
+
+        <div id="movies-container">
+
+            <div class="box">
+                <img src="" alt="">
+                <div class="movie-info">
+                    <h3></h3>
+                    <p class="overview"></p>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="" alt="">
+                <div class="movie-info">
+                    <h3></h3>
+                    <p class="overview"></p>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="" alt="">
+                <div class="movie-info">
+                    <h3></h3>
+                    <p class="overview"></p>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="movie-info">
+                    <img src="" alt="">
+                </div>
+                <h3></h3>
+                <p class="overview"></p>
+            </div>
+
+    </section>
+
+      <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+
+
+      <!--dito yung scirpt link-->
+      <script src="main.js"></script>
+  
+      <script src="index.js"></script>
+  
+      <script src="script.js"></script>
+
+
+    
+</body>
+</html>

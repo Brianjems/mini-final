@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B13 Cinema</title>
+    <!-- CSS only -->
+    <link rel="stylesheet" href="./moviestv.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"
+        integrity="sha512-rstIgDs0xPgmG6RX1Aba4KV5cWJbAMcvRCVmglpam9SoHZiUCyQVDdH2LPlxoHtrv17XWblE/V/PP+Tr04hbtA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="shortcut icon" href="favicon.icon">
+
+
+<body>
+    <header>
+        <a href="./index.html" class="logo">
+            <i class="uil uil-ticket"></i>FullTank Theater
+        </a>
+        <div class="uil uil-bars" id="menu-icon"></div>
+        <ul class="navbar">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./moviestv.html">Movies/TV</a></li>
+            <li><a href="./aboutus.html">About</a></li>
+            <li><a href="./aboutus.html">Contact Us</a></li>
+            <li><a href="./services.html">Services</a></li>
+            <li id="btnsignup" onclick="signupToggle()">
+                <a href="#" class="btn">SignUp</a>
+            </li>
+            <li id="btnlogin" onclick="loginToggle()">
+                <a href="#" class="btn">Login</a>
+            </li>
+            <li id="btnDisplayUser">
+                <a href="#" id="displayUser"></a>
+            </li>
+            <li id="btnlogout">
+                <a href="#" class="btn">logout</a>
+            </li>
+        </ul>
+       
+
+
+    </header>
+
+    <div class="signup-form">
+        <div class="form">
+            <div class="close" onclick="signupToggle()">&times;</div>
+            <div class="text">
+                <h1>Register Now!</h1>
+            </div>
+            <form id="signupForm">
+                <div class="row">
+                    <input type="text" id="txtFirstName" required placeholder="First Name">
+                    <input type="text" id="txtLastName" required placeholder="Last Name">
+                </div>
+                <input type="email" id="txtEmailAddress" required placeholder="Email ID">
+                <input type="password" id="txtPassword" required placeholder="Password">
+                <input type="password" id="txtConfirmPassword" required placeholder="Confirm Password">
+                <input type="submit" value="Register">
+            </form>
+        </div>
+    </div>
+    <div id="divLogin" class="login-form">
+        <div class="form">
+            <div class="close" onclick="loginToggle()">&times;</div>
+            <div class="text">
+                <h1>Login</h1>
+            </div>
+            <form id="login">
+                <input id="txtLoginEmail" type="text" required placeholder="Email ID">
+                <input id="txtLoginPassword" type="password" required placeholder="Password">
+                <input type="submit" value="Login">
+            </form>
+        </div>
+    </div>
+    <!--Home-->
+    
+<div class="container">
+    
+</div>
+
+
+    <section class="movies" id="movies">
+        <h2 class="heading">TOP MOVIES</h2>
+        <!--Movies Container-->
+        <div id="top-movies">
+             
+            <div class="box">
+                <img src="" alt="">
+                    <div class="movie-info">
+                    <h3></h3>
+                        <p class="overview"></p>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="" alt="">
+                <div class="movie-info">
+                    <h3></h3>
+                    <p class="overview"></p>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="" alt="">
+                <div class="movie-info">
+                    <h3></h3>
+                    <p class="overview"></p>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="movie-info">
+                    <img src="" alt="">
+                </div>
+                <h3></h3>
+                <p class="overview"></p>
+            </div>
+
+    </section>
+
+    <!--Coming-->
+
+
+        
+        </div>
+    </section>
+
+    <!--NewsLetter-->
+
+
+    <!--Footer-->
+
+    <section class="footer">
+        <a href="#" class="logo">
+            <i class="uil uil-ticket"></i>B13 Cinema
+        </a>
+        <div class="social">
+            <a href="#"><i class="uil uil-facebook-f"></i></a>
+            <a href="#"> <i class="uil uil-twitter"></i></a>
+            <a href="#"><i class="uil uil-instagram"></i></a>
+            <a href="#"><i class="uil uil-github"></i></a>
+        </div>
+    </section>
+
+    <!--Copyright-->
+
+    <div class="copyright">
+        <p>&#169 B13 Cinema All Rights Reserved</p>
+    </div>
+
+
+    <!--Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  
+
+
+
+    <!--dito yung scirpt link-->
+    <script src="main.js"></script>
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="index.js"></script>
+
+    <script src="script.js"></script>
+
+
+
+
+</body>
+
+</html>
