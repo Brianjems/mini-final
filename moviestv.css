@@ -34,7 +34,7 @@ html::-webkit-scrollbar-thumb {
      top: 45%;
      left: 50%;
      transform: translate(-50%, -50%);
-     background: #171010;
+     background-image: url(./images/spark.gif);
      border-radius: 10px;
      box-shadow: 3px 3px 10px 1px rgba(0, 0, 0, .2);
      color: white;
@@ -101,7 +101,9 @@ section  {
     padding: 4.5rem 0 1.5rem;
 }
 body {
-    background: #171010;
+    background-image: url(./images/spark.gif);
+    background-size: cover;
+    height: 100vh;
     color: var(--bg-color);
 }
 header {
@@ -249,13 +251,19 @@ header.shadow .navbar li {
 }
 .heading {
     margin-top: 70px;
-    width: 968px;
+    width: auto;
+    text-align: center;
     margin-left: auto;
     margin-right: auto;
     font-size: 2rem;
+    transition: transform .2s;
     font-weight: 500;
     text-transform: uppercase;
-    border-bottom: 1px solid var(--main-color);
+
+}
+.heading:hover {
+    transform: scale(1.3);
+    
 }
 .heading-content {
     max-width: 968px;
@@ -480,6 +488,10 @@ header.shadow .navbar li {
 @media (max-width: 1080px) {
     .home-text {
         padding: 0 100px;
+        
+    }
+    .heading {
+        width: auto;
     }
 }
 @media (max-width: 991px) {

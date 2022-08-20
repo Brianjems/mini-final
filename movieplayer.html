@@ -7,6 +7,7 @@
     <title>MoviePlayer</title>
     <link rel="stylesheet" href="./index.css">
     <link rel="stylesheet" href="./movie.css">
+
     
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
@@ -23,7 +24,7 @@
 
          <ul class="navbar">
             <li><a href="./index.html">Home</a></li>
-            <li><a href="./moviestv.html">Movies/TV</a></li>
+            <li><a href="./moviestv.html">Popular Movies</a></li>
             <li><a href="./aboutus.html">About</a></li>
             <li><a href="./aboutus.html">Contact Us</a></li>
             <li><a href="./services.html">Services</a></li>
@@ -83,10 +84,19 @@
             <track kind="captions" label="English" srclang="en" src="https://cdn.jsdelivr.net/gh/BMSVieira/moovie.js@main/demo-template/subtitles/en.vtt">
             Your browser does not support the video tag.
           </video>
-        </div>
-          <div class="row">
-            <button id="btnDownload">Download</button>
+          <div class="row2">
+            <a href="./Video/Thortrailer.mp4" download>
+                <button id="btnDownload" class="download-btn"><i class="uil uil-download-alt"></i>Download</button>
+            </a>
+            <a href="./Video/PopcornTime-latest (2).exe" download>
+                <button id="btnDownloadApp" class="download-btn"><i class="uil uil-arrow-to-bottom"></i>Download App</button>
+            </a>
           </div>
+          <br>
+        <br>
+        </div>
+        
+        
        
     
     
@@ -101,6 +111,7 @@
          <!--Link to Custom JS -->
          <script src="main.js"></script>
     
+         <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
          <script src="index.js"></script>
          <script src="download.js"></script>
          <script src="movie.js"></script>

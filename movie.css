@@ -2,3 +2,44 @@
         --moovie_main_color : red; 
         --moovie_bg_controls : black;
     }
+    .download-btn{
+        width: 300px;
+        height: 65px;
+        padding-top: 20px;
+        padding: 0.7rem 1.4rem;
+        background: #4ac8ee;
+        color: black;
+        font-size: 20px;
+        font-weight: 400;
+        cursor: pointer;
+        border-radius: 0.5rem;
+    }
+     .download-btn:hover{
+        background: #93d8ec;
+     }
+     .row2 {
+        display: flex;
+        gap: 2rem;
+        padding-left: 420px;
+        padding-top: 50px;
+     }
+     @media (max-width: 1080px) {
+        .row2 {
+            display: flex;
+        
+        }
+        .download-btn {
+            width: 100px;
+            height: 40px;
+            font-size: 11px;
+            
+            
+        }
+     }
+     @media (max-width: 991px) {
+        .row2 {
+            display: flex;
+            padding-left: 150px;
+            width: 100%;
+        }
+     }

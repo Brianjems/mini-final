@@ -34,7 +34,7 @@ html::-webkit-scrollbar-thumb {
      top: 45%;
      left: 50%;
      transform: translate(-50%, -50%);
-     background: #171010;
+     background-image: url(./images/spark.gif);
      border-radius: 10px;
      box-shadow: 3px 3px 10px 1px rgba(0, 0, 0, .2);
      color: white;
@@ -101,8 +101,12 @@ section  {
     padding: 4.5rem 0 1.5rem;
 }
 body {
+    background-image: url(./images/spark.gif);
+    background-size: cover;
+    height: 100%;
     color: var(--bg-color);
 }
+
 header {
     position: fixed;
     width: 100%;
@@ -148,7 +152,7 @@ header.shadow .navbar li {
 .navbar a {
     font-size: 1rem;
     font-weight: 500;
-    color: rgb(82, 80, 80);
+    color: white;
 }
 .navbar li::after {
     content: '';
@@ -191,9 +195,10 @@ body {
     
 }
 .hero {
+    width: auto;
     margin-top: 100px;
     text-align: center;
-    color: black;
+    color: white;
     align-items: center;
     object-fit: cover;
     
@@ -203,7 +208,7 @@ hr {
 }
 
 .container {
-    width: 1100px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -222,7 +227,7 @@ hr {
     left: 0;
     width: 100%;
     height: 100%;
-    background: #171010;
+    background: #707070;
     transform: scaleY(0);
     transform-origin: top;
     transition: transform 0.5s;
@@ -264,7 +269,7 @@ hr {
 .container .box p {
    position: relative;
    z-index: 2;
-   color: #555;
+   color: white;
    transition: 0.5s;
 }
 
@@ -329,7 +334,7 @@ hr {
     }
     #menu-icon {
         display: initial;
-        color: black;
+        color: white;
     }
     .container .box {
         width: 700px;

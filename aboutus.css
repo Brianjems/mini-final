@@ -34,7 +34,7 @@ html::-webkit-scrollbar-thumb {
      top: 45%;
      left: 50%;
      transform: translate(-50%, -50%);
-     background: #171010;
+     background-image: url(./images/spark.gif);
      border-radius: 10px;
      box-shadow: 3px 3px 10px 1px rgba(0, 0, 0, .2);
      color: white;
@@ -103,7 +103,14 @@ section  {
     padding: 4.5rem 0 1.5rem;
 }
 body {
+    background-image: url(./images/spark.gif);
+    background-size: cover;
+    height: 100vh;
     color: var(--bg-color);
+}
+
+.heading {
+    width: audto;
 }
 header {
     position: fixed;
@@ -145,12 +152,12 @@ header.shadow .navbar li {
 .navbar li {
     position: relative;
     cursor: pointer;
-    color: rgb(75, 73, 73);
+    color: white;
 }
 .navbar a {
     font-size: 1rem;
     font-weight: 500;
-    color: rgb(82, 80, 80);
+    color: white;
 }
 .navbar li::after {
     content: '';
@@ -202,7 +209,7 @@ hr {
 .container h1 {
     display: inline-block;
     text-transform: uppercase;
-    color: #000;
+    color: white;
     border-bottom: 4px solid gray;
     font-size: 35px;
     padding-bottom: 17px;
@@ -214,7 +221,7 @@ hr {
     margin: 0 auto;
     text-align: center;
     margin-top: 25px;
-    color: #171010;
+    color: white;
    
 }
 .aboutdesc {
@@ -233,6 +240,7 @@ hr {
     width: calc(100% / 3);
     margin: 0 -2px;
     padding: 20px;
+    
     transition: 0.5s;
     box-sizing: border-box;
 }
@@ -246,15 +254,16 @@ hr {
 .service h2 {
     font-size: 18px;
     text-transform: uppercase;
-    color: #171010;
+    color: rgb(192, 64, 64);
     font-weight: 500;
     margin: 0;
 }
 .service p {
-    color: #171010;
+    color: white;
     font-size: 15px;
     font-weight: 500;
 }
+
 
 
 @media screen and (max-width: 800px) {
@@ -262,9 +271,11 @@ hr {
         width: 50%;
     }
 }
+
 @media screen and (max-width: 500px) {
     .service {
         width: 100%;
+
     }
 }
    
@@ -293,7 +304,7 @@ hr {
     }
     #menu-icon {
         display: initial;
-        color: black;
+        color: white;
     }
     .container .box {
         width: 700px;
@@ -310,7 +321,7 @@ hr {
         right: 0;
         display: flex;
         flex-direction: column;
-        background: white;
+        background: black;
         row-gap: 1.4rem;
         padding: 20px;
         box-shadow: 4px 4px 0 4px rgb(14, 55, 54/ 15%);
@@ -411,7 +422,7 @@ hr {
 
 .container2 {
     text-align: center;   
-    background: #171010;
+    
 }
 .header2 {
     padding-top: 30px;
@@ -514,7 +525,7 @@ hr {
     width: 60%;
     float: left;
     margin-left: 50px;
-    color: #171010;
+    color: white;
 }
 .content h1 {
     font-size: 60px;
@@ -539,6 +550,7 @@ hr {
     .image-section {
         width: 100%;
         float: none;
+        margin-left: 0px;
     }
     .content {
         width: 100%;
@@ -571,7 +583,7 @@ hr {
     z-index: -1;
 }
 .contact-info {
-    color: #000;
+    color: rgb(223, 215, 215);
     max-width: 500px;
     line-height: 65px;
     padding-left: 50px;
@@ -601,14 +613,15 @@ hr {
 
 }
 .contact-form .text-box {
-    background: #000;
-    color: #fff;
+    background: rgb(248, 247, 247);
+    color: rgb(15, 15, 15);
     border: none;
     width: calc(50% - 10px);
     height: 50px;
     padding: 12px;
     font-size: 15px;
     border-radius: 5px;
+    opacity: 0.7;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0);
     margin-bottom: 20px;
     opacity: 0.9;
@@ -618,8 +631,8 @@ hr {
 
 }
 .contact-form textarea{
-    background: #000;
-    color: #fff;
+    background: rgb(240, 238, 238);
+    color: rgb(8, 8, 8);
     border: none;
     width: 100%;
     padding: 12px;
@@ -697,7 +710,7 @@ hr {
 .copyright {
     padding: 20px;
     text-align: center;
-    color: black;
+    color: white;
 }
 
 
